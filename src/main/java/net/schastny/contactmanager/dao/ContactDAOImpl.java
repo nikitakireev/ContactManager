@@ -13,7 +13,13 @@ public class ContactDAOImpl implements ContactDAO {
  @Autowired
  private SessionFactory sessionFactory;
 
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
 
+    public SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
 
     public void addContact(Contact contact) {
         sessionFactory.getCurrentSession().save(contact);

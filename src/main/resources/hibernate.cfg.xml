@@ -8,3 +8,5 @@
         <mapping class="net.schastny.contactmanager.domain.Contact" />
     </session-factory>
 </hibernate-configuration>
+
+
